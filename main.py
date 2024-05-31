@@ -75,7 +75,7 @@ async def execute_search(ctx, query, mode, prefix):
                 description=help_message,
                 color=0x3498db
             )
-            initial_embed.set_thumbnail(url="https://media1.tenor.com/m/j9Jhn5M1Xw0AAAAd/neuro-sama-ai.gif")
+            initial_embed.set_thumbnail(url="https://media.discordapp.net/attachments/1233503643500675252/1246202382941946037/d0664f4c8d73e803e801e6edeed1f409.jpg?ex=665b87e9&is=665a3669&hm=b1c560ae484f498c4e275a23dab61aa27649ddbc9e9c52bee2364149374cec74&")
             await ctx.send(embed=initial_embed)
             del bot.active_searches[user_id]
             return
@@ -179,8 +179,8 @@ def create_embed(script, page, total_pages):
 
     set_image_or_thumbnail(embed, game_image_url)
 
-    embed.set_footer(text=f"Made by AdvanceFalling Team | Page {page}/{total_pages}", 
-                     icon_url="https://img.getimg.ai/generated/img-u1vYyfAtK7GTe9OK1BzeH.jpeg")
+    embed.set_footer(text=f"Made by: @nozcy. | Page {page}/{total_pages}", 
+                     icon_url="https://media.discordapp.net/attachments/1233503643500675252/1246202382941946037/d0664f4c8d73e803e801e6edeed1f409.jpg?ex=665b87e9&is=665a3669&hm=b1c560ae484f498c4e275a23dab61aa27649ddbc9e9c52bee2364149374cec74&")
 
     return embed
 
