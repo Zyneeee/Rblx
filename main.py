@@ -12,7 +12,7 @@ import validators
 
 load_dotenv()
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("TOKEN")
 
 intents = discord.Intents.default()
 intents.typing = False
@@ -28,13 +28,13 @@ class MyBot(commands.Bot):
     async def setup_hook(self):
         await self.tree.sync()
 
-bot = MyBot(command_prefix='!', intents=intents)
+bot = MyBot(command_prefix='R.', intents=intents)
 
 max_content_length = 200
 
 @bot.event
 async def on_ready():
-    activity = discord.Game(name="Script Searcher | !search and /search")
+    activity = discord.Game(name="Search Whatever Script you want")
     await bot.change_presence(activity=activity)
     print("Bot is ready 🤖")
 
